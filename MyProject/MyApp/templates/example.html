@@ -1,0 +1,9 @@
+{% load custom_filters %}
+
+<p>{{ "Привет, Мир!"|to_uppercase }}</p>
+<p>{{ 15.678|round_value }}</p>
+
+<p>Список элементов:</p>
+{% create_list "Яблоко" "Банан" "Вишня" %}
+
+{% show_current_date %}
